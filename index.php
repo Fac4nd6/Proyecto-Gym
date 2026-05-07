@@ -31,6 +31,22 @@ require "header.php";
 
     <section class="hero-2">
 
+    
+
+    <div class="hero2-content">
+        
+        <h2>
+            Stride Together, Shape Tomorrow.
+        </h2>
+
+        <p>
+            Ditch the excuses and embrace the change.
+        </p>
+
+        <button>NEWSLETTER</button>
+
+    </div>
+
     </section>
 
     <section class="split">
@@ -44,22 +60,36 @@ require "header.php";
         </div>
 
         <div class="hero-right">
-            <p>Don't Skip a Rep</p>
-            <p>Get the latest updates and start your fitness journey today.</p>
+
+            <div class="content-right">
+                <h2>
+                    Don't<br>
+                    Skip a<br>
+                    Rep
+                </h2>
+
+                <p>Get the latest updates and workouts</p>
+
+                <button>NEWSLETTER</button>
+
+            </div>
         </div>
 
     </section>
 
     <section class="hero4">
-
-
+        <div class="hero4-content">
+            <h2>Our mission</h2>
+            <p>Our mission is to build your strength, promote an active lifestyle and help you become the best version of yourself.</p>
+        </div>
     </section>
 </main>
 
 <!-- FOOTER -->
-<footer>
 
-</footer>
+<?php
+require "footer.php";
+?>
 
 </body>
 
