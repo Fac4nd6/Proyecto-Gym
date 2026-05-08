@@ -25,7 +25,7 @@ require "header.php";
 
         </div>
 
-        <button class="btn-register">REGISTER</button>
+        <button class="btn-register"><a href="register.php">REGISTER</a></button>
 
     </section>
 

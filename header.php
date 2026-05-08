@@ -15,7 +15,7 @@
     <nav class="nav">
 
         <div class="nav-left">
-            <a href="#">Home</a>
+            <a href="index.php">Home</a>
         </div>
 
         <div class="nav-center">
@@ -23,8 +23,8 @@
         </div>
 
         <div class="nav-right">
-            <a href="#">Login</a>
-            <a href="#">Events</a>
+            <a href="login.php">Login</a>
+            <a href="events.php">Events</a>
         </div>
 
     </nav>
