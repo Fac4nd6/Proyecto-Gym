@@ -16,15 +16,18 @@
 
         <div class="nav-left">
             <a href="index.php">Home</a>
+            <a href="schedules.php">Events</a>
+            <a href="inicio.php">Inicio</a>
         </div>
 
         <div class="nav-center">
-            <p>Gym<br>For<br>Life</p>
+            <p>Gym For Life</p>
         </div>
 
         <div class="nav-right">
             <a href="login.php">Login</a>
-            <a href="schedules.php">Events</a>
+            <a href="register.php">Register</a>
+            <a href="logout.php">Logout</a>
         </div>
 
     </nav>
