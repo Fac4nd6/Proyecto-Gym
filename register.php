@@ -1,4 +1,5 @@
     <?php
+    session_start();
     require "conexion.php";
     if (!empty($_POST['password']) && !empty($_POST['confirm_password']) && !empty($_POST['username']) && !empty($_POST['email'])) {
 
@@ -59,7 +60,6 @@
 
     <main>
         <section class="login-hero">
-            <!-- Background image: url("Img/Opti/hero-principal.webp") -->
 
             <!-- Register Modal Centrado -->
             <div class="login-modal">
