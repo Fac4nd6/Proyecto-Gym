@@ -24,7 +24,7 @@
 
         <div class="nav-right">
             <a href="login.php">Login</a>
-            <a href="events.php">Events</a>
+            <a href="schedules.php">Events</a>
         </div>
 
     </nav>
