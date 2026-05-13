@@ -1068,10 +1068,16 @@ footer {
 
 /* Responsive */
 
-/* =========================
-   TABLET
-========================= */
+/*TABLET */
 @media (max-width: 768px) {
+
+    .hero-left {
+        min-height: 300px;
+    }
+
+    .gif {
+        min-height: 300px;
+    }
 
     nav {
         padding: 1.5rem 2rem;
@@ -1182,9 +1188,7 @@ footer {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/*MOBILE*/
 @media (max-width: 480px) {
 
     nav {
@@ -1234,12 +1238,21 @@ footer {
     }
 
     .a-link,
-    .a-link-hero,
     .btn-join,
     .btn-register {
         width: 100%;
         text-align: center;
     }
+
+   .a-link-hero {
+    width: auto;
+    right: 10px;
+    bottom: 10px;
+
+    padding: 10px 16px;
+
+    z-index: 20;
+}
 
     .hero2-content {
         padding: 1rem;
