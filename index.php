@@ -25,27 +25,28 @@ require "header.php";
 
         </div>
 
-        <button class="btn-register"><a href="register.php">REGISTER</a></button>
+        <a class="a-link-hero" href="register.php">REGISTER</a>
+
 
     </section>
 
     <section class="hero-2">
 
-    
 
-    <div class="hero2-content">
-        
-        <h2>
-            Stride Together, Shape Tomorrow.
-        </h2>
 
-        <p>
-            Ditch the excuses and embrace the change.
-        </p>
+        <div class="hero2-content">
 
-        <button>NEWSLETTER</button>
+            <h2>
+                Stride Together, Shape Tomorrow.
+            </h2>
 
-    </div>
+            <p>
+                Ditch the excuses and embrace the change.
+            </p>
+
+            <a class="a-link" href="schedules.php">VIEW SCHEDULES</a>
+
+        </div>
 
     </section>
 
@@ -55,8 +56,10 @@ require "header.php";
             <div class="overlay">
                 <h2>500+<br>Members</h2>
                 <p>By North Shore residents</p>
-                <button>ABOUT US</button>
+                <a class="a-link" href="login.php">LOGIN</a>
             </div>
+
+
         </div>
 
         <div class="hero-right">
@@ -70,7 +73,7 @@ require "header.php";
 
                 <p>Get the latest updates and workouts</p>
 
-                <button>NEWSLETTER</button>
+                <a class="a-link" href="schedules.php">VIEW SCHEDULES</a>
 
             </div>
         </div>

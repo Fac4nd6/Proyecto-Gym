@@ -60,7 +60,7 @@
 
     <main>
         <section class="login-hero">
-
+        
             <!-- Register Modal Centrado -->
             <div class="login-modal">
                 <h1 class="login-title">Register Now</h1>

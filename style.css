@@ -82,19 +82,6 @@ body {
     font-weight: bold;
 }
 
-button {
-    transition:
-        background 300ms ease,
-        transform 300ms ease,
-        box-shadow 300ms ease;
-}
-
-button:hover {
-    background: #a8ff9d;
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 25px rgba(149, 255, 141, 0.45);
-}
-
 /* NAV */
 nav {
     position: absolute;
@@ -196,7 +183,7 @@ nav a:hover::after {
 .split {
     display: flex;
     min-height: 100vh;
-    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* mitad izquierda */
@@ -215,10 +202,15 @@ nav a:hover::after {
     color: white;
     transform: translate(-50%, -50%);
     text-align: center;
+
 }
+
+
+
 
 /* mitad derecha */
 .hero-right {
+    min-height: 100vh;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -226,8 +218,6 @@ nav a:hover::after {
     padding: 4rem;
     background: var(--black2);
     position: relative;
-    padding-top: 10rem;
-
 }
 
 .overlay h2 {
@@ -373,6 +363,72 @@ nav a:hover::after {
     border-radius: 30px;
 
     cursor: pointer;
+}
+
+.a-link-hero {
+
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    margin-top: 2rem;
+
+    background: var(--green);
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    color: var(--black);
+
+    transition: background 300ms, transform 300ms, box-shadow 300ms;
+
+}
+
+.a-link-hero:hover {
+    background: #a8ff9d;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(149, 255, 141, 0.45);
+
+}
+
+.a-link {
+
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    margin-top: 2rem;
+
+    background: var(--green);
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    color: var(--black);
+
+    transition: background 300ms, transform 300ms, box-shadow 300ms;
+
+}
+
+.a-link:hover {
+    background: #a8ff9d;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(149, 255, 141, 0.45);
 }
 
 /* Hero Inicio  */
@@ -779,6 +835,8 @@ footer {
 .btn-join {
     background: var(--green);
     color: var(--black);
+    text-decoration: none;
+    text-align: center;
     border: none;
     padding: 0.8rem 2rem;
     border-radius: 25px;
@@ -803,6 +861,290 @@ footer {
     transform: translateY(0);
     box-shadow: 0 2px 10px rgba(149, 255, 141, 0.3);
 }
+
+/* exercise page */
+
+.hero-chest {
+    background-color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-chest-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    ;
+    color: var(--white);
+    position: relative;
+}
+
+.hero-chest-content h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.hero-chest-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--white);
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.section-hero h2 {
+    position: relative;
+    font-size: 3rem;
+    font-family: var(--font-display);
+    color: var(--white);
+}
+
+.section-hero.upper {
+    background-image: url("Img/Opti/chest.jpeg");
+}
+
+.section-hero.middle {
+    background-image: url("Img/Opti/press.jpg");
+}
+
+.section-hero.lower {
+    background-image: url("Img/Opti/high.jpg");
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* gifs Chest */
+
+.Incline-Dumbbell-Press {
+    background-image: url("Img/gifs/chest/superior/press-inclinado-con-mancuernas.gif");
+}
+
+.Low-Cable-Fly {
+    background-image: url("Img/gifs/chest/superior/polea-baja.gif");
+}
+
+.Decline-Push-up {
+    background-image: url("Img/gifs/chest/superior/declinadas.gif");
+}
+
+.Bench-Press {
+    background-image: url("Img/gifs/chest/middle/press-banca.gif");
+}
+
+.Dumbbell-Fly {
+    background-image: url("Img/gifs/chest/middle/apertura-mancuerna.gif");
+}
+
+.Push-up {
+    background-image: url("Img/gifs/chest/middle/lagartijas.gif");
+}
+
+.Decline-Bench-Press {
+    background-image: url("Img/gifs/chest/inferior/press-banca-declinado.gif");
+}
+
+.Dips {
+    background-image: url("Img/gifs/chest/inferior/fondos-paralelas.gif");
+}
+
+.High-Cable-Fly {
+    background-image: url("Img/gifs/chest/inferior/polea-alta.gif");
+}
+
+/* gifs Leg */
+
+.Barbell-Squat {
+    background-image: url("Img/gifs/leg/quadriceps/barbell-squat.gif");
+}
+
+.Leg-Extension {
+    background-image: url("Img/gifs/leg/quadriceps/leg-extension.gif");
+}
+
+.Bulgarian-Split-Squat {
+    background-image: url("Img/gifs/leg/quadriceps/bulgarian-split.gif");
+}
+
+.Romanian-Deadlift {
+    background-image: url("Img/gifs/leg/Hamstring-Femoral/Romanian-Deadlift.gif");
+}
+
+.Lying-Leg-Curl {
+    background-image: url("Img/gifs/leg/Hamstring-Femoral/Lying-Leg-Curl.gif");
+}
+
+.Nordic-Curl {
+    background-image: url("Img/gifs/leg/Hamstring-Femoral/Nordic-Curl.gif");
+}
+
+.Hip-Thrust {
+    background-image: url("Img/gifs/leg/glutes-claves/Hip-Thrust.gif");
+}
+
+.Step-Up {
+    background-image: url("Img/gifs/leg/glutes-claves/step-up.gif");
+}
+
+.Sumo-Deadlift {
+    background-image: url("Img/gifs/leg/glutes-claves/Sumo-Deadlift.gif");
+}
+
+/* gifs Arm */
+
+.Barbell-Curl {
+    background-image: url("Img/gifs/arm/bicep/Barbell-Curl.gif");
+}
+
+.Hammer-Curl {
+    background-image: url("Img/gifs/arm/bicep/Hammer-Curl.gif");
+}
+
+.Preacher-Curl {
+    background-image: url("Img/gifs/arm/bicep/Preacher-Curl.gif");
+}
+
+.Tricep-Pushdown {
+    background-image: url("Img/gifs/arm/triceps/Tricep-Pushdown.gif");
+}
+
+.Skull-Crusher {
+    background-image: url("Img/gifs/arm/triceps/Skull-Crusher.gif");
+}
+
+.Tricep-Extension {
+    background-image: url("Img/gifs/arm/triceps/Tricep-Extension.gif");
+}
+
+.Wrist-Curl {
+    background-image: url("Img/gifs/arm/forearm/Wrist-Curl.gif");
+}
+
+.Reverse-Wrist-Curl {
+    background-image: url("Img/gifs/arm/forearm/Reverse-Wrist-Curl.gif");
+}
+
+.Farmer-Carry {
+    background-image: url("Img/gifs/arm/forearm/Farmer’s-Carry.gif");
+}
+
+/* gifs Shoulder */
+
+.Front-Raise {
+    background-image: url("Img/gifs/shoulder/Anterior-deltoid/Front-Raise.gif");
+}
+
+.Arnold-Press {
+    background-image: url("Img/gifs/shoulder/Anterior-deltoid/Arnold-Press.gif");
+}
+
+.Dumbbell-Shoulder-Press {
+    background-image: url("Img/gifs/shoulder/Anterior-deltoid/Dumbbell-Shoulder-Press.gif");
+}
+
+.Lateral-Raise {
+    background-image: url("Img/gifs/shoulder/lateral-deltoid/Lateral-Raise.gif");
+}
+
+.Upright-Row {
+    background-image: url("Img/gifs/shoulder/lateral-deltoid/Upright-Row.gif");
+}
+
+.Cable-Lateral-Raise {
+    background-image: url("Img/gifs/shoulder/lateral-deltoid/Cable-Lateral-Raise.gif");
+}
+
+.Face-Pull {
+    background-image: url("Img/gifs/shoulder/posterior-deltoid/Face-Pull.gif");
+}
+
+.Rear-Delt-Fly {
+    background-image: url("Img/gifs/shoulder/posterior-deltoid/rear-delt-fly.gif");
+}
+
+.Reverse-Pec-Deck {
+    background-image: url("Img/gifs/shoulder/posterior-deltoid/Reverse-Pec-Deck.gif");
+}
+
+/* gifs Back */
+
+.Barbell-Shrug {
+    background-image: url(Img/gifs/back/Upper-Back-and-Trapezius-Muscles/Barbell-Shrug.gif);
+}
+
+.Seated-Cable-Row {
+    background-image: url(Img/gifs/back/Upper-Back-and-Trapezius-Muscles/Seated-Cable-Row.gif);
+}
+
+.T-Bar-Row {
+    background-image: url(Img/gifs/back/Upper-Back-and-Trapezius-Muscles/T-Bar-Row.webp);
+}
+
+.Lat-Pulldown {
+    background-image: url(Img/gifs/back/dorsal-width/Lat-Pulldown.gif);
+}
+
+.Pull-Up {
+    background-image: url(Img/gifs/back/dorsal-width/Pull-Up.gif);
+
+}
+
+.Straight-Arm-Pulldown {
+    background-image: url(Img/gifs/back/dorsal-width/Straight-Arm-Pulldown.gif);
+
+}
+
+.Back-Extension {
+    background-image: url(Img/gifs/back/Lumbar-Region-and-Spinal-Erectors/Back-Extension.gif);
+
+}
+
+.Deadlift {
+    background-image: url(Img/gifs/back/Lumbar-Region-and-Spinal-Erectors/Deadlift.webp);
+
+}
+
+.good-morning {
+    background-image: url(Img/gifs/back/Lumbar-Region-and-Spinal-Erectors/good-morning-exercise.gif);
+
+}
+
+
+
+/* Responsive */
 
 @media (max-width: 768px) {
     .login-modal {

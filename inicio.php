@@ -36,7 +36,7 @@ require "header.php";
             Challenge yourself with our Chest Day routine. A complete workout designed to build strength, improve your posture and push your limits one rep at a time.
         </p>
 
-        <button>VIEW EXERCISES</button>
+        <a class="a-link" href="chest.php">VIEW EXERCISES</a>
 
     </div>
 
@@ -56,7 +56,7 @@ require "header.php";
             Challenge yourself with our Leg Day routine. A complete workout designed to build powerful legs, improve your balance and push your endurance to the next level.
         </p>
 
-        <button>VIEW EXERCISES</button>
+        <a class="a-link" href="leg.php">VIEW EXERCISES</a>
 
     </div>
 
@@ -76,7 +76,7 @@ require "header.php";
             Challenge yourself with our Arm Day routine. A complete workout designed to build stronger arms, increase your muscle definition and push your strength to the limit.
         </p>
 
-        <button>VIEW EXERCISES</button>
+        <a class="a-link" href="arm.php">VIEW EXERCISES</a>
 
     </div>
 
@@ -96,7 +96,7 @@ require "header.php";
             Challenge yourself with our Shoulder Day routine. A complete workout designed to build powerful shoulders, improve your stability and push your strength to new heights.
         </p>
 
-        <button>VIEW EXERCISES</button>
+        <a class="a-link" href="shoulder.php">VIEW EXERCISES</a>
 
     </div>
 
@@ -116,7 +116,7 @@ require "header.php";
           Challenge yourself with our Back Day routine. A complete workout designed to strengthen your back, improve your posture and build the foundation of a stronger body.
         </p>
 
-        <button>VIEW EXCERCISE</button>
+        <a class="a-link" href="back.php">VIEW EXERCISES</a>
 
     </div>
 

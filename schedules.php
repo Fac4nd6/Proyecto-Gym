@@ -72,7 +72,7 @@ require "header.php";
                 </ul>
             </div>
 
-            <button class="btn-join">JOIN NOW</button>
+        <a class="btn-join" href="register.php">JOIN NOW</a>
 
         </div>
 
