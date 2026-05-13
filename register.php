@@ -13,27 +13,34 @@
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
             echo "<script>alert('Ingresa un email válido');</script>";
+        } else if (strlen($password) < 8) {
+
+            echo "<script>alert('La contraseña debe tener mínimo 8 caracteres');</script>";
         }
 
-        if (strlen($password) < 12) {
+            /* Verificar contraseñas */
 
-            echo "<script>alert('La contraseña debe tener mínimo 12 caracteres');</script>";
-        }
+         else if ($password !== $confirm_password) {
 
-        /* Verificar contraseñas */ else if ($password !== $confirm_password) {
 
             echo "<script>alert('Las contraseñas no coinciden');</script>";
         } else {
 
             /* Verificar email repetido */
-            $sql_email = "SELECT * FROM users WHERE email = '$email'";
-            $resultado_email = mysqli_query($conexion, $sql_email);
-            $email_existe = mysqli_fetch_assoc($resultado_email);
+            $stmt_email = $conexion->prepare("SELECT * FROM users WHERE email = ?");
+            $stmt_email->bind_param("s", $email);
+            $stmt_email->execute();
+
+            $resultado_email = $stmt_email->get_result();
+            $email_existe = $resultado_email->fetch_assoc();
 
             /* Verificar username repetido */
-            $sql_user = "SELECT * FROM users WHERE username = '$username'";
-            $resultado_user = mysqli_query($conexion, $sql_user);
-            $user_existe = mysqli_fetch_assoc($resultado_user);
+            $stmt_user = $conexion->prepare("SELECT * FROM users WHERE username = ?");
+            $stmt_user->bind_param("s", $username);
+            $stmt_user->execute();
+
+            $resultado_user = $stmt_user->get_result();
+            $user_existe = $resultado_user->fetch_assoc();
 
             if ($email_existe) {
 
@@ -43,10 +50,13 @@
                 echo "<script>alert('El nombre de usuario ya existe');</script>";
             } else {
 
-                $sql = "INSERT INTO users (username, email, password)
-                    VALUES ('$username', '$email', '$password')";
+                $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
-                mysqli_query($conexion, $sql);
+                $stmt = $conexion->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+
+                $stmt->bind_param("sss", $username, $email, $password_hash);
+
+                $stmt->execute();
 
                 header('Location: index.php');
                 exit();
@@ -60,7 +70,7 @@
 
     <main>
         <section class="login-hero">
-        
+
             <!-- Register Modal Centrado -->
             <div class="login-modal">
                 <h1 class="login-title">Register Now</h1>

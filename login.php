@@ -3,27 +3,34 @@ session_start();
 
 require 'conexion.php';
 
-
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
+
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
-    $resultado = mysqli_query($conexion, $sql);
-    $usuario = mysqli_fetch_assoc($resultado);
 
+    $stmt = $conexion->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
 
-    if ($usuario) {
+    $resultado = $stmt->get_result();
+    $usuario = $resultado->fetch_assoc();
+
+    if ($usuario && password_verify($password, $usuario['password'])) {
+
         $_SESSION['username'] = $usuario['username'];
+
         header('Location: inicio.php');
-        exit;   
+        exit();
+
     } else {
+
         $error = "Usuario no encontrado";
     }
 }
 
-
 require "header.php";
 ?>
+
 
 <main>
     <section class="login-hero">
