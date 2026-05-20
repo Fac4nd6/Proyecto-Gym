@@ -184,6 +184,12 @@ nav a:hover::after {
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 100vh;
+}
+
+.exercise-left {
+    background-image: none;
+    background: var(--black);
 }
 
 .overlay {
@@ -864,11 +870,11 @@ footer {
 .gif {
     width: 100%;
     height: 100%;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 /* gifs Chest */
 
 .Incline-Dumbbell-Press {
@@ -1119,7 +1125,8 @@ footer {
     .hero-left,
     .hero-right {
         width: 100%;
-        min-height: 50vh;
+        min-height: auto;
+        
     }
 
     .hero-right {
@@ -1244,15 +1251,15 @@ footer {
         text-align: center;
     }
 
-   .a-link-hero {
-    width: auto;
-    right: 10px;
-    bottom: 10px;
+    .a-link-hero {
+        width: auto;
+        right: 10px;
+        bottom: 10px;
 
-    padding: 10px 16px;
+        padding: 10px 16px;
 
-    z-index: 20;
-}
+        z-index: 20;
+    }
 
     .hero2-content {
         padding: 1rem;
@@ -1299,4 +1306,14 @@ footer {
         font-size: 2rem;
         top: -1.5rem;
     }
+
+
+    .gif {
+        min-height: 100vh;
+    }
+
+     .hero-left {
+        height: 50vh;
+    }
+
 }

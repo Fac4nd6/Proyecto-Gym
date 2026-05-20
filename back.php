@@ -36,7 +36,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Barbell-Shrug"></div>
         </div>
 
@@ -56,7 +56,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Seated-Cable-Row"></div>
         </div>
 
@@ -77,7 +77,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif T-Bar-Row"></div>
         </div>
 
@@ -114,7 +114,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Lat-Pulldown"></div>
         </div>
 
@@ -135,7 +135,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Pull-Up"></div>
         </div>
 
@@ -158,7 +158,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Straight-Arm-Pulldown"></div>
         </div>
 
@@ -191,7 +191,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Back-Extension"></div>
         </div>
 
@@ -212,7 +212,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif Deadlift"></div>
         </div>
 
@@ -234,7 +234,7 @@ require 'header.php';
 
     <section class="split">
 
-        <div class="hero-left">
+        <div class="hero-left exercise-left">
             <div class="gif good-morning"></div>
         </div>
 
